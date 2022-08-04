@@ -34,13 +34,23 @@ git commit -a -m "commit message"
 ```
 git remote -v
 ```
+> This command is use to check if a remote connection exist and active
 - Adding a remote connection
 ```
 git remote add "connection name" "connection url" remote
 git remote add origin https://github.com/username
 ```
+> The above command is use to create a remote connection
 - Removing a remote connection
 ```
 git remote remove "connection name" 
 git remote remove origin 
 ```
+> This command is use to remove connection to your git hub
+## Pushing to remote repository
+```
+git push
+git push -u connection-name branch-name
+(eg git push -u origin master)
+```
+> The first command is use to push to a remote repository when you already have an upstream set up while the second command is use to set an upstream and push to a remote repository 
